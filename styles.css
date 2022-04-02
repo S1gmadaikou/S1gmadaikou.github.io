@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    user-select: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 200;
+    user-select: none;
+}
+
+.navbar .logo {
+    float: left;
+    margin: 0 10vh;
+}
+
+.navbar .logo img {
+    border-radius: 100%;
+    vertical-align: middle;
+    height: 50px;
+    margin: auto 25px;
+}
+
+.navbar .logo a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: bold;
+    margin: 0px 0px;
+    padding: auto 25px;
+}
+
+.navbar img{
+    width: auto;
+    vertical-align: middle;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 10vh;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.navbar ul li a{
+    font-size: 24px;
+    line-height: 48px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    margin: 0px 10px;
+    transition: all 0.2s linear;
+}
+
+.navbar ul li a.button {
+    padding: 3px 18px;
+    border-radius: 20px;
+    background: rgba(0, 0, 255, 0.25);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul li a:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 600px) {
+    .navbar ul {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: rgba(0, 0, 0, 0.5);
+        top: -100%;
+        left: 0;
+        text-align: center;
+        transition: 0.5s;
+    }
+}
+
+.background {
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    position: fixed;
+    z-index: -1;
+    background: url(./assets/wallpaper.jpg);
+    filter: blur(8px);
+}
+
+.top-page {
+    padding-top: 50px;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.top-page h1 {
+    font-size: 90px;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.top-page h1 span {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.top-page h2 {
+    font-size: 32px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.about-me {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.about-me h1 {
+    font-size: 72px;
+    font-weight: lighter;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.about-me ul {
+    list-style-type: none;
+    margin: 50px auto;
+}
+
+.about-me ul li {
+    width: 200px;
+    min-height: 200px;
+    color: white;
+    border: solid 1px white;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    display: inline-block;
+    padding: 25px 25px;
+    margin: 25px 25px;
+    vertical-align: top;
+    transition: all 0.3s ease;
+}
+
+.about-me ul li:hover {
+    transform: scale(1.07);
+}
+
+.about-me ul li h1 {
+    font-size: 24px;
+    font-family: 'Kosugi Maru', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.about-me ul li:hover h1 {
+    transform: translateY(5px);
+}
+
+.about-me ul li img {
+    width: 64px;
+    transition: all 0.3s ease;
+}
+
+.about-me ul li:hover img {
+    transform: translateY(7px);
+}
+
+.about-me ul li p {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: lighter;
+    transition: all 0.3s ease;
+}
+
+.about-me ul li:hover p {
+    transform: scale(1.07);
+}
+
+.about-me .players {
+    width: 80%;
+    margin: auto auto;
+}
+
+.about-me .players h1 {
+    font-size: 52px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.about-me .players ul {
+    list-style-type: none;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.about-me .players ul li {
+    width: inherit;
+    min-height: 0px;
+    color: white;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    background: none;
+    text-align: center;
+    display: inline-block;
+    padding: 0px 0px;
+    margin: 25px 25px;
+    vertical-align: top;
+    transition: all 0.3s ease;
+}
+
+.about-me ul li:hover {
+    transform: scale(1.05);
+}
+
+.about-me .players ul li h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-me .players ul li:hover h1 {
+    color: rgba(255, 255, 255, 0);
+    transform: scale(0);
+}
+
+.about-me .players ul li p {
+    color: rgba(0, 0, 0, 0);
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-me .players ul li:hover p {
+    color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-32px);
+}
+
+.about-me .players ul li img {
+    width: 90px;
+}
+
+.about-me ul li:hover img {
+    transform: translateY(7px) scale(0.9);
+}
+
+.contact {
+    width: 100%;
+    min-height: 50vh;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.contact h1 {
+    font-size: 72px;
+    font-weight: lighter;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 50px;
+}
+
+.contact a {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 32px;
+    text-decoration: none;
+    padding: 6px 12px;
+    margin: 25px 25px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 32px;
+    transition: all 0.3s ease;
+}
+
+.contact a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 12px white;
+}
+
+.contact p {
+    font-size: 20px;
+    padding: 12px 12px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
