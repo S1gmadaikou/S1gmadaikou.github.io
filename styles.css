@@ -156,6 +156,7 @@ html {
 
 .about-me ul li {
     width: 200px;
+    max-width: 100%;
     min-height: 240px;
     color: white;
     border: solid 1px white;

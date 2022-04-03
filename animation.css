@@ -1,17 +1,26 @@
 .animation {
     position: relative;
+    max-width: 100%;
     width: 512px;
-    height: 512px;
+    overflow: hidden;
     margin: auto auto;
+}
+
+.animation::before {
+    content:"";
+    display: block;
+    padding-top: 100%;
 }
 
 .animation #box {
     position: absolute;
     top: 0;
-    left: calc(50% - 256px);
-    width: 512px;
-    height: 512px;
-    margin: auto auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     
     animation-name: rotation;
     animation-timing-function:linear;
@@ -25,17 +34,19 @@
 .animation #box:nth-child(1) {
     background-image: url(./assets/design/box1.png);
     animation-duration: 4s;
+    animation-name: rotation2;
 }
 
 .animation #box:nth-child(2) {
     background-image: url(./assets/design/box2.png);
     animation-duration: 2s;
+    animation-name: rotation2;
 }
 
 .animation #box:nth-child(3) {
     background-image: url(./assets/design/box3.png);
     animation-duration: 3.5s;
-    animation-name: rotation2;
+    animation-name: rotation;
 }
 
 .animation #box:nth-child(4) {
