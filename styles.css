@@ -114,7 +114,7 @@ html {
     font-size: 4.5rem;
     font-weight: lighter;
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .top-page h1 span {
@@ -124,7 +124,7 @@ html {
 .top-page h2 {
     font-size: 2.0rem;
     font-weight: lighter;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: rgba(255, 255, 255, 0.9);
 }
 

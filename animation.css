@@ -1,0 +1,72 @@
+.animation {
+    position: relative;
+    width: 512px;
+    height: 512px;
+    margin: auto auto;
+}
+
+.animation #box {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 256px);
+    width: 512px;
+    height: 512px;
+    margin: auto auto;
+    
+    animation-name: rotation;
+    animation-timing-function:linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+.animation #box:nth-child(1) {
+    background-image: url(./assets/design/box1.png);
+    animation-duration: 4s;
+}
+
+.animation #box:nth-child(2) {
+    background-image: url(./assets/design/box2.png);
+    animation-duration: 2s;
+}
+
+.animation #box:nth-child(3) {
+    background-image: url(./assets/design/box3.png);
+    animation-duration: 3.5s;
+    animation-name: rotation2;
+}
+
+.animation #box:nth-child(4) {
+    background-image: url(./assets/design/box4.png);
+    animation-duration: 1.5s;
+}
+
+.animation #box:nth-child(5) {
+    background-image: url(./assets/design/box5.png);
+    animation-duration: 2.0s;
+    animation-name: rotation2;
+}
+
+.animation #box:nth-child(6) {
+    background-image: url(./assets/design/logo.png);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotation2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
