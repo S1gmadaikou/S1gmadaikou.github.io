@@ -292,21 +292,23 @@ html {
 }
 
 .contact a {
-    color: rgba(0, 0, 0, 0.9);
     font-size: 32px;
     text-decoration: none;
     padding: 6px 12px;
     margin: 25px 25px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 32px;
-    transition: all 0.3s ease;
+    transition: all 0.2s linear;
+
+    color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 12px black;
+    border: solid 1px black;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .contact a:hover {
     color: rgba(255, 255, 255, 0.9);
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 12px white;
+    border: solid 1px white;
 }
 
 .contact p {
