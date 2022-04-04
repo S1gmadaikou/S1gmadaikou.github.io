@@ -219,8 +219,8 @@ html {
 }
 
 .about-me .players ul li {
-    width: inherit;
-    min-height: 0px;
+    width: auto;
+    min-height: auto;
     color: white;
     border: none;
     border-radius: none;
@@ -232,6 +232,14 @@ html {
     margin: 25px 25px;
     vertical-align: top;
     transition: all 0.3s ease;
+}
+
+.about-me .players ul li #box {
+    transition: all 0.2s linear
+}
+
+.about-me .players ul li:hover #box {
+    opacity: 100;
 }
 
 .about-me .players ul li:hover {
@@ -254,6 +262,7 @@ html {
     color: rgba(0, 0, 0, 0);
     font-size: 28px;
     font-family: 'Roboto', sans-serif;
+    height: 0;
 }
 
 .about-me .players ul li:hover p {
@@ -263,6 +272,7 @@ html {
 
 .about-me .players ul li img {
     width: 90px;
+    padding-top: 6px;
 }
 
 .about-me ul li:hover img {
